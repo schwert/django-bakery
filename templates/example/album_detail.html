@@ -1,0 +1,7 @@
+{% extends "blocks.html" %}
+
+{% block content %}
+<h1>{{object.title}}</h1>
+<h2><a href="{{object.band.get_absolute_url}}">{{object.band}}</a></h2>
+<span style="font-style:italic">{{object.year}}</span>
+{% endblock %}
